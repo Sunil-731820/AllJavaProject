@@ -26,9 +26,9 @@ public class DateBean {
 	}
 	
 	public LocalDateTime getDateAndTime() {
-		LocalDateTime dateAndTime = LocalDateTime.now();
-		System.out.println(dateAndTime);
-		return dateAndTime;
+		LocalDateTime todate = LocalDateTime.now();
+		System.out.println(todate);
+		return todate;
 	}
 
 }
