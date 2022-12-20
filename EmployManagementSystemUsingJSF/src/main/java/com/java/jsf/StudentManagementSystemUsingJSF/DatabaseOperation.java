@@ -136,10 +136,17 @@ public class DatabaseOperation {
         return "/studentsList.xhtml?faces-redirect=true";
     }
 
-	public static String deleteStudentRecordInDB(int studentId) {
-		// TODO Auto-generated method stub
-		return null;
-	}
+    public static String deleteStudentRecordInDB(int studentId){
+        System.out.println("deleteStudentRecordInDB() : Student Id: " + studentId);
+        try {
+            pstmt = getConnection().prepareStatement("delete from student_record where student_id = "+studentId);  
+            pstmt.executeUpdate();  
+            connObj.close();
+        } catch(Exception sqlException){
+            sqlException.printStackTrace();
+        }
+        return "/studentsList.xhtml?faces-redirect=true";
+    }
 	
 	
 }
