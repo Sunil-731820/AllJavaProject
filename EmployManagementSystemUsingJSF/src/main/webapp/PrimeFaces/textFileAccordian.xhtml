@@ -1,0 +1,156 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:sql_rt="http://java.sun.com/jstl/sql_rt"
+      xmlns:p="http://primefaces.org/ui">
+ 
+ <h:head>
+ <style>
+
+ #demo{
+  padding: 10px;
+  border: 1px solid #4CAF50;
+ }
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+/* Container for flexboxes */
+section {
+  display: -webkit-flex;
+  display: flex;
+}
+
+
+
+/* Style the content */
+article {
+  -webkit-flex: 3;
+  -ms-flex: 3;
+  flex: 3;
+  background-color: #f1f1f1;
+  padding: 10px;
+}
+
+
+/* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  section {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+}
+ 	</style>
+ <script>
+function loadDoc() {
+  const xhttp = new XMLHttpRequest();
+  xhttp.onload = function() {
+    document.getElementById("demo").innerHTML =
+    this.responseText;
+  }
+	xhttp.open("GET", "ajax_info1.txt");
+	xhttp.send();
+}
+</script>
+ </h:head>
+ 
+
+ <h:body>
+ 	<h:form id="form">  
+		<p:growl id="msgs" showDetail="true" />  
+		<center><h3 style="margin-top:0">Content Management System</h3>  
+</center>
+		<p:accordionPanel>  
+			<p:tab title="Loading...">
+			<section>
+	  			<article>
+			<div id="demo">
+				<h:commandButton value="Day1" onclick="loadDoc()"></h:commandButton>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				
+				Date Is : 
+				Daily 1 hour 
+			<input type="datetime-local" />
+			
+			
+			</div> 
+			</article>
+		</section>
+
+	</p:tab>
+	</p:accordionPanel>  
+	
+	<p:accordionPanel>  
+			<p:tab title="Loading...">
+			<section>
+	  			<article>
+			<div id="demo"> 
+				<h:commandButton value="Day1" onclick="loadDoc()"></h:commandButton>
+			</div> 
+			</article>
+		</section>
+
+	</p:tab>
+		
+	</p:accordionPanel>  
+<p:accordionPanel>  
+			<p:tab title="Loading...">
+			<section>
+	  			<article>
+			<div id="demo"> 
+				<h:commandButton value="Day1" onclick="loadDoc()"></h:commandButton>
+			</div> 
+			</article>
+		</section>
+
+	</p:tab>
+		
+	</p:accordionPanel>  
+	
+	<p:accordionPanel>  
+			<p:tab title="Loading...">
+			<section>
+	  			<article>
+			<div id="demo"> 
+				<h:commandButton value="Day1" onclick="loadDoc()"></h:commandButton>
+			</div> 
+			</article>
+		</section>
+
+	</p:tab>
+		
+	</p:accordionPanel>  
+	
+	<p:accordionPanel>  
+			<p:tab title="Loading...">
+			<section>
+	  			<article>
+			<div id="demo"> 
+				<h:commandButton value="Day1" onclick="loadDoc()"></h:commandButton>
+			</div> 
+			</article>
+		</section>
+
+	</p:tab>
+		
+	</p:accordionPanel>  
+</h:form>  
+</h:body>
+ 
+ </html>
+      
